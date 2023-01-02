@@ -1,1 +1,1 @@
-Создание web-приложения при помощи React и TypeScript
+Разработка web-приложения при помощи React и TypeScript
