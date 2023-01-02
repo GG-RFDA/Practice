@@ -1,1 +1,1 @@
-Создание web-приложения при помощи React и JavaScript
+Разработка web-приложения при помощи React и JavaScript
