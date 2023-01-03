@@ -5,7 +5,7 @@ const Hover = () => {
     // Создаём reference при помощи хука
     const ref = useRef();
     /*
-     * Используем созданным хуком useHover.
+     * Используем созданный хук useHover.
      * В качестве параметра передаём reference.
      */
     const isHovering = useHover(ref);
