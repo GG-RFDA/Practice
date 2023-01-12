@@ -1,7 +1,18 @@
 import React from 'react';
+// Импортируем некоторый объект из файла
 import classes from './MyButton.module.css';
+/*
+ * Компонент будет принимать пропсы.
+ * Проводим деструктуризацию: добавляем children, а все остальные пропсы оставляем как есть.
+ */
 const MyButton = ({children, ...props}) => {
     return (
+        /*
+         * В корне будет находиться кнопка.
+         * Класс добавляется так, как продемонстрировано ниже (т.е. получаем стиль как свойство объекта).
+         * Весь объект разворачиваем в button.
+         * Все пропсы, которые передаём в компонент MyButton, будут "улетать" в кнопку.
+         */
         <button {...props} className ={classes.myBtn}>
             {children}
         </button>
@@ -9,3 +20,5 @@ const MyButton = ({children, ...props}) => {
 };
 
 export default MyButton;
+
+// Через компонент MyButton всё что угодно можно передавать в корневую кнопку Button
